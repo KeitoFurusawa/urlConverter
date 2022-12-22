@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GenerateYouTubeURLWithTimeCode</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+    </head>
+
+    <body>
+        <h1>Youtube URL Converter</h1>
+        <p>You can put timecode at youtube video url</p>
+        <div class="inputs"> 
+            Src URL:<input id="sorce" size="100">
+            <div class="time">
+                Time:
+            <input id="timecode_h" size="3"> :
+            <input id="timecode_m" size="2"> :
+            <input id="timecode_s" size="2">
+            </div>
+        </div>
+        <br>
+        <input type="button" onclick="convert()" value="変換">
+        <br>
+        <a href="#" id="result"></a></p>
+        <script src="./sample.js"></script>
+    </body>
+
+</html>
