@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 16px; /* ベースのフォントサイズを設定 */
+}
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 14px; /* スマートフォン用のフォントサイズを設定 */
+    }
+}
+
+.video-tc {
+    text-align: center; /* .video-tc 内のテキストを中央寄せにする */
+}
+
+#iframe-wrapper {
+    margin-top: 20px; /* iframe-wrapper の上部マージンを追加して適切なスペースを確保 */
+}
+
+iframe {
+    width: 480px;
+    height: 270px;
+    border-radius: 7px;
+    margin-top: 5px;
+}
+@media screen and (max-width: 500px) {
+    iframe {
+        width: 304px;
+        height: 171px;
+    }
+}
+
+#sorce {
+    width: 200px;
+}
+@media screen and (max-width: 500px) {
+    #sorce {
+        width: 100px;
+    }
+}
+
