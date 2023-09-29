@@ -9,12 +9,13 @@ body {
 }
 @media screen and (max-width: 500px) {
     body {
-        font-size: 14px; /* スマートフォン用のフォントサイズを設定 */
+        font-size: 20px; /* スマートフォン用のフォントサイズを設定 */
     }
 }
 
 .video-tc {
     text-align: center; /* .video-tc 内のテキストを中央寄せにする */
+    font-size: 20px;
 }
 
 #iframe-wrapper {
@@ -35,11 +36,11 @@ iframe {
 }
 
 #sorce {
-    width: 200px;
+    width: 300px;
 }
 @media screen and (max-width: 500px) {
     #sorce {
-        width: 100px;
+        width: 150px;
     }
 }
 
