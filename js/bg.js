@@ -8,10 +8,11 @@ function create_iframe() {
 }
 
 function extractVideoId(url) {
-    const pattern1 = /^https:\/\/www\.youtube\.com\/watch\?v=(\w+)/;
-    const pattern2 = /^https:\/\/youtu\.be\/(\w+)\?si=/;
-    const pattern3 = /^https:\/\/www\.youtube\.com\/embed\/(\w+)/;
-    const pattern4 = /^https:\/\/www\.youtube\.com\/live\/(\w+)\?si=/;
+    const pattern1 = /^https:\/\/www\.youtube\.com\/watch\?v=([\w-]+)/;
+    const pattern2 = /^https:\/\/youtu\.be\/([\w-]+)\?si=/;
+    const pattern3 = /^https:\/\/www\.youtube\.com\/embed\/([\w-]+)/;
+    const pattern4 = /^https:\/\/www\.youtube\.com\/live\/([\w-]+)\?si=/;
+    //const pattern5 = /^https:\/\/youtu.be/1O-3jZ659zU?si=OyGFHfHNZdnRZBFq
     let videoId = null;
   
     if (pattern1.test(url)) {
@@ -22,6 +23,8 @@ function extractVideoId(url) {
       videoId = url.match(pattern3)[1];
     } else if (pattern4.test(url)) {
       videoId = url.match(pattern4)[1]
+    } else {
+      return "ERROR";
     }
     console.log(videoId);
     return videoId;
